@@ -1,0 +1,117 @@
+@charset "UTF-8";
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.audio-player {
+  max-width: 350px;
+  border-radius: 20px;
+  padding: 24px;
+  -webkit-box-shadow: 0 28px 28px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 28px 28px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  background-color: #121212;
+  color: white;
+}
+
+.artwork {
+  border-radius: 120px;
+  display: block;
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.track-info {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.artist {
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.audio-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+  margin: 15px auto 15px;
+}
+
+.audio-controls .prev svg,
+.audio-controls .next svg {
+  width: 40px;
+  height: 40px;
+  color: #18D860;
+}
+
+.audio-controls .play svg,
+.audio-controls .pause svg {
+  height: 40px;
+  width: 40px;
+  color: #18D860;
+}
+
+input[type="range"] {
+  z-index: 999;
+  height: 5px;
+  -webkit-appearance: none;
+  width: 100%;
+  outline: none;
+  color: red;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #18D860;
+  -webkit-box-shadow: 0 0 2px 0 #555;
+          box-shadow: 0 0 2px 0 #555;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type="”range”"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #18D860;
+  box-shadow: 0 0 2px 0 #555;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type="”range”"]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #18D860;
+  box-shadow: 0 0 2px 0 #555;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+/*# sourceMappingURL=card.css.map */
